@@ -1,93 +1,99 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <meta charset="utf-8">
-    <title></title>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.min.js"
-      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous">
-    </script>
-  </head>
 
-  <body>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<meta charset="utf-8">
+	<title></title>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+	</script>
+</head>
 
-    <div class="total">
-      Messages total : <div id="count">​0</div>
+<body>
+
+	<!-- FORMULAIRE SEARCH -->
+	<div class="row">
+		<div class=form_message row>
+			<form name="frm_search_message">
+				<p>
+					<label for="l_message">Search</label>
+					<input type="text" name="txt_search" value="Noel Paganelli" placeholder= "Enter your search criteria" id="search_message" class="input_field"/>
+					<button type="button" name="btn_search" class="btn_blue" id="btn_search">Search</button>
+				</p>
+			</form>
+		</div>
+	</div>
+
+	<!-- FORMULAIRE ADD MESSAGE -->
+	<div class="row">
+		<div class=form_message row>
+			<form name="frm_add_message">
+				<p>
+					<label for="l_message">Message to send</label>
+					<input type="text" name="txt_message" value="TEST" placeholder= "Enter your message" id="new_message"/ class="input_field">
+					<button type="button" name="btn_add" class="btn_blue" id="btn_add">Add</button>
+				</p>
+			</form>
+		</div>
+	</div>
+
+
+	<div class="row">
+		<!--div class="total"-->
+		Nombre de messages : <div id="count">​0</div>
+		<!--/div-->
+	</div>
+
+  <div class="row">
+    <img  class="avatar" src="avatar-1.jpg">
+    <div>
+  	  <h6>Noel Paganelli</h6>
+    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, sed?</p>
+  	</div>
+  	<img class="trash" src="trash.png">
+  </div>
+
+	<div class="row">
+		<img class="avatar" src="avatar-2.jpg">
+		<div>
+			<h6>Elise Watson</h6>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, sed?</p>
+		</div>
+		<img class="trash" src="trash.png">
+  </div>
+
+	<div class="row">
+		<img class="avatar" src="avatar-3.jpg">
+		<div>
+			<h6>Adam Keval</h6>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, sed?</p>
+		</div>
+		<img class="trash" src="trash.png">
+  </div>
+
+	<div class="row">
+		<img  class="avatar" src="avatar-4.jpg">
+		<div>
+			<h6>Alexandra Pozi</h6>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, sed?</p>
+		</div>
+		<img class="trash" src="trash.png">
+  </div>
+
+	<div class="row last-row">
+    <img  class="avatar" src="avatar-5.jpg">
+    <div>
+      <h6>Zoe Milot</h6>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, sed?</p>
     </div>
-
-    <!-- FORMULAIRE -->
-    <div class="row">
-
-      <div class=form_message row>
-
-      <form name="frm_message" action="envoyer_mail()">
-        <p>
-          <label for="l_message">Message</label>
-
-          <input type="text" name="txt_message" value="TEST" placeholder= "Enter your message" id="add_message"/>
-          </div>
-          <!--
-          <label for="l_destinataire">Destinataire</label>
-          <input type="text" name="t_destinataire" id="form_destinataire"/>
-
-          <label for="l_email">Adresse</label>
-          <input type="email" name="t_email" id="form_mail"/>
-          -->
-          <button type="button" name="btn_add" class="btn_blue">Add</button>
-
-        </p>
-      </form>
-
+    <img class="trash" src="trash.png">
     </div>
-    <div class="row">
-      <img  class="avatar" src="avatar-1.jpg">
-      <div>
-        <h6>Noel Paganelli</h6>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, sed?</p>
-      </div>
-      <img class="trash" src="trash.png">
-    </div>
+  </div>
 
-    <div class="row">
-      <img class="avatar" src="avatar-2.jpg">
-      <div>
-        <h6>Elise Watson</h6>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, sed?</p>
-      </div>
-      <img class="trash" src="trash.png">
-    </div>
+  <!--SCRIPTS -->
+	<script src="script_jQuery.js"></script>
 
-    <div class="row">
-      <img class="avatar" src="avatar-3.jpg">
-      <div>
-        <h6>Adam Keval</h6>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, sed?</p>
-      </div>
-      <img class="trash" src="trash.png">
-    </div>
+</body>
 
-    <div class="row">
-      <img  class="avatar" src="avatar-4.jpg">
-      <div>
-        <h6>Alexandra Pozi</h6>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, sed?</p>
-      </div>
-      <img class="trash" src="trash.png">
-    </div>
-
-    <div class="row last-row">
-      <img  class="avatar" src="avatar-5.jpg">
-      <div>
-        <h6>Zoe Milot</h6>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, sed?</p>
-      </div>
-      <img class="trash" src="trash.png">
-    </div>
-
-    <script src="script.js"></script>
-
-  </body>
 </html>

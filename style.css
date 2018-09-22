@@ -51,7 +51,6 @@ body {
 h6 {
   font-size:14px;
   margin: 0px;
-
 }
 
 #count {
@@ -59,8 +58,8 @@ h6 {
 }
 
 /*== FORMULAIRE ==*/
-#add_message {
-  margin:15px;
+.input_field {
+  margin:10px;
   width:400px;
   padding: 8px;
   border-radius: 5px;

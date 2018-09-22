@@ -86,18 +86,3 @@ div_msg.appendChild(trash);
 document.frm_message.elements["txt_message"].value = "";
 eltCounterMessage.textContent = nbMessage();
 });
-
-/*
-var inputs = document.getElementsByTagName("input");
-for (let index = 0; index < inputs.length; index++) {
-  const element = inputs[index];
-  //console.log(element.name);
-  if (element.name == "t_message") {
-    element.addEventListener("click",
-      console.log("Listener CLICK ajouté");
-        function() {
-        console.log("Message ajouté !");
-      });
-  }
-}
-*/
